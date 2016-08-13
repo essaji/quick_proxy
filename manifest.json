@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quick Proxy",
+  "description": "Quick proxy works quickly. All you have to do is just right click on the link and select 'open with quick proxy.'",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+	  "persistent": true,
+	  "scripts": ["setup.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+	"tabs"
+  ],
+  "icons": {
+	  "16":"icon.png"
+  },
+  
+  "manifest_version": 2
+}
